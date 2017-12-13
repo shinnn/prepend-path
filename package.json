@@ -1,0 +1,42 @@
+{
+	"name": "prepend-path",
+	"version": "0.1.0",
+	"description": "Prepend a path to the existing PATH environment variable cross-platform way",
+	"repository": "shinnn/prepend-path",
+	"author": "Shinnosuke Watanabe (https://github.com/shinnn)",
+	"scripts": {
+		"pretest": "eslint --fix --format=codeframe index.js test",
+		"test": "nyc --reporter=html --reporter=text node test/test.js"
+	},
+	"license": "ISC",
+	"files": [
+		"index.js"
+	],
+	"keywords": [
+		"prepend",
+		"modification",
+		"path",
+		"env",
+		"environemnt",
+		"variable",
+		"join",
+		"precedence",
+		"cross-platform"
+	],
+	"dependencies": {
+		"path-key": "^1.0.0"
+	},
+	"devDependencies": {
+		"@shinnn/eslint-config-node": "^5.0.0",
+		"eslint": "^4.13.1",
+		"nyc": "^11.4.0",
+		"pretend-platform": "^2.0.0",
+		"tape": "^4.8.0"
+	},
+	"eslintConfig": {
+		"extends": "@shinnn/node",
+		"rules": {
+			"no-var": "off"
+		}
+	}
+}
