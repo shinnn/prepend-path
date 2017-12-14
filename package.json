@@ -24,7 +24,7 @@
 		"cross-platform"
 	],
 	"dependencies": {
-		"path-key": "^1.0.0"
+		"path-key": "^2.0.1"
 	},
 	"devDependencies": {
 		"@shinnn/eslint-config-node": "^5.0.0",
@@ -35,10 +35,6 @@
 		"tape": "^4.8.0"
 	},
 	"eslintConfig": {
-		"extends": "@shinnn/node",
-		"rules": {
-			"no-var": "off",
-			"prefer-template": "off"
-		}
+		"extends": "@shinnn/node"
 	}
 }
