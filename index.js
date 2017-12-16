@@ -1,10 +1,7 @@
 'use strict';
 
-const inspect = require('util').inspect;
-const pathLib = require('path');
-
-const delimiter = pathLib.delimiter;
-const normalize = pathLib.normalize;
+const {inspect} = require('util');
+const {delimiter, normalize} = require('path');
 
 const getPathKey = require('path-key');
 
