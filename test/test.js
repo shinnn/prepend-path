@@ -10,7 +10,7 @@ const test = require('tape');
 const originalPath = process.env[getPathKey()];
 
 test('prependPath()', t => {
-	t.plan(4);
+	t.plan(5);
 
 	t.equal(
 		prependPath(__dirname),
@@ -26,8 +26,14 @@ test('prependPath()', t => {
 
 	t.throws(
 		() => prependPath(),
-		/^TypeError.*Expected a path \(<string>\) to prepend to the existing `PATH` environment/i,
-		'should throw an error when '
+		/^RangeError: Expected 1 argument \(<string>\), but got none\./,
+		'should throw an error when it takes no arguments.'
+	);
+
+	t.throws(
+		() => prependPath('a', 'b'),
+		/^RangeError: Expected 1 argument \(<string>\), but got 2 arguments\./,
+		'should throw an error when it takes too many arguments.'
 	);
 
 	t.throws(
