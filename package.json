@@ -1,6 +1,6 @@
 {
 	"name": "prepend-path",
-	"version": "0.2.0",
+	"version": "0.3.0",
 	"description": "Prepend a path to the existing PATH environment variable cross-platform way",
 	"repository": "shinnn/prepend-path",
 	"author": "Shinnosuke Watanabe (https://github.com/shinnn)",
