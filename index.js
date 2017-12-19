@@ -13,12 +13,13 @@ module.exports = function prependPath(...args) {
 
 	if (argLen === 0) {
 		const error = new RangeError(`${ARG_ERROR_MESSAGE}, but got none.`);
+		error.code = 'ERR_MISSING_ARGS';
+
 		throw error;
 	}
 
 	if (argLen !== 1) {
-		const error = new RangeError(`${ARG_ERROR_MESSAGE}, but got ${argLen} arguments.`);
-		throw error;
+		throw new RangeError(`${ARG_ERROR_MESSAGE}, but got ${argLen} arguments.`);
 	}
 
 	const [path] = args;
@@ -29,6 +30,8 @@ module.exports = function prependPath(...args) {
 		}\` environment variable, but got ${
 			inspect(path)
 		} instead.`);
+		error.code = 'ERR_INVALID_ARG_TYPE';
+
 		throw error;
 	}
 
