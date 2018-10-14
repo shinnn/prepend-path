@@ -2,7 +2,6 @@
 
 [![npm version](https://img.shields.io/npm/v/prepend-path.svg)](https://www.npmjs.com/package/prepend-path)
 [![Build Status](https://travis-ci.org/shinnn/prepend-path.svg?branch=master)](https://travis-ci.org/shinnn/prepend-path)
-[![Build status](https://ci.appveyor.com/api/projects/status/h8qwn7njkrds617j/branch/master?svg=true)](https://ci.appveyor.com/project/ShinnosukeWatanabe/prepend-path/branch/master)
 [![Coverage Status](https://img.shields.io/coveralls/shinnn/prepend-path.svg)](https://coveralls.io/github/shinnn/prepend-path?branch=master)
 
 Prepend a path to the existing [`PATH`](http://pubs.opengroup.org/onlinepubs/000095399/basedefs/xbd_chap08.html#tag_08_03) environment variable cross-platform way
