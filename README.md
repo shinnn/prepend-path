@@ -61,4 +61,4 @@ which.sync('npm'); //=> '/User/example/new_path/npm/bin/npm'
 
 ## License
 
-[ISC License](./LICENSE) © 2017 Shinnosuke Watanabe
+[ISC License](./LICENSE) © 2017 - 2018 Shinnosuke Watanabe
